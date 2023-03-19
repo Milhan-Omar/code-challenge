@@ -23,5 +23,35 @@ gradeSubmit.addEventListener('click', function (e) {
  }
 });
 
-
+speedSubmit.addEventListener('click', function (e) {
+  e.preventDefault();
+ const value = speedInput.value;
+ if (value <= 70) {
+  alert("ok");
+ } else {
+   let extraspeed = value - 70;
+   let points = extraspeed / 5;
+   if (points > 12) {
+    alert("License suspended");
+   } else {
+   alert(`pionts: ${points}`)
+   }
+ }
+ });
+ 
+ netSubmit.addEventListener('click', function (e) {
+  e.preventDefault();
+  const grossSalary = Number(netInput.value);
+  let tax = 0;
+  if (grossSalary > 0 && grossSalary <= 24000) {
+   tax = grossSalary * 0.1;
+   alert(`Net salary: ${tax}`)
+  } else if (grossSalary >= 24001 && grossSalary <= 32333) {
+   tax = grossSalary * 0.25;
+   alert(`Net salary: ${tax}`)
+  } else if (grossSalary > 32333) {
+   tax = grossSalary * 0.3;
+   alert(`Net salary: ${tax}`)
+  }
+ });
 
