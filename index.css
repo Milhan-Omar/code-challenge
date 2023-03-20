@@ -42,8 +42,6 @@ button:hover {
 }
 
 input {
-	/* background-image: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAMAAAADCAYAAABWKLW/AAAAFElEQVQImWNggIKysjIpHAwGBgYAWJsEdbVd/aEAAAAASUVORK5CYII=); */
-	/* background-repeat: repeat; */
 	background-color: #FFF;
 	color: #222;
 	border-width: 1px;

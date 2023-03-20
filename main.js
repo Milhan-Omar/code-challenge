@@ -9,14 +9,19 @@ gradeSubmit.addEventListener('click', function (e) {
  e.preventDefault();
  const value = gradeInput.value;
  if (value > 79 && value <= 100) {
+  //if marks are equal to 79 or greater 100, assign the grade A and return it .
   alert("A");
  } else if (value >= 60 && value <= 79) {
+  //if marks are between 60 and 79, assign the grade B and return.
   alert("B");
  } else if (value >= 49 && value <= 59) {
+  //if marks are between 49 and 59, assign the grade C and return.
   alert("C");
  } else if (value >= 40 && value <= 49) {
+  //if marks are between 40 and 49, assign the grade D   and return.
   alert("D");
  } else if (value < 40 && value > 0) {
+  //if marks are less than 40, assign the grade F and return.
   alert("E");
  } else {
   alert("Please provide correct input");
@@ -27,18 +32,22 @@ speedSubmit.addEventListener('click', function (e) {
   e.preventDefault();
  const value = speedInput.value;
  if (value <= 70) {
+  // the input value is equal or less than 70 it should return 70
   alert("ok");
  } else {
    let extraspeed = value - 70;
    let points = extraspeed / 5;
    if (points > 12) {
+    //  and if the input value minus the the value divide by five to give out the points
     alert("License suspended");
-   } else {
+   } else { 
+    //  it should print out license sus
    alert(`pionts: ${points}`)
    }
  }
  });
  
+  checkSpeed(speed);
  netSubmit.addEventListener('click', function (e) {
   e.preventDefault();
   const grossSalary = Number(netInput.value);
