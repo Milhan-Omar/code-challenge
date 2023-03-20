@@ -47,7 +47,6 @@ speedSubmit.addEventListener('click', function (e) {
  }
  });
  
-  checkSpeed(speed);
  netSubmit.addEventListener('click', function (e) {
   e.preventDefault();
   const grossSalary = Number(netInput.value);
